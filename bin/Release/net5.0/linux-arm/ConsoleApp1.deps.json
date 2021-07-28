@@ -1,12 +1,12 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v5.0/linux-x64",
+    "name": ".NETCoreApp,Version=v5.0/linux-arm",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {},
-    ".NETCoreApp,Version=v5.0/linux-x64": {
+    ".NETCoreApp,Version=v5.0/linux-arm": {
       "ConsoleApp1/1.0.0": {
         "dependencies": {
           "VkNet": "1.65.0"

@@ -11,7 +11,6 @@ C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\Microsoft.Extensions.Dep
 C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\Newtonsoft.Json.dll
 C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\VkNet.dll
-C:\Users\Lo\source\repos\ConsoleApp1\obj\Release\net5.0\ConsoleApp1.csproj.AssemblyReference.cache
 C:\Users\Lo\source\repos\ConsoleApp1\obj\Release\net5.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lo\source\repos\ConsoleApp1\obj\Release\net5.0\ConsoleApp1.AssemblyInfoInputs.cache
 C:\Users\Lo\source\repos\ConsoleApp1\obj\Release\net5.0\ConsoleApp1.AssemblyInfo.cs
@@ -21,3 +20,4 @@ C:\Users\Lo\source\repos\ConsoleApp1\obj\Release\net5.0\ConsoleApp1.dll
 C:\Users\Lo\source\repos\ConsoleApp1\obj\Release\net5.0\ref\ConsoleApp1.dll
 C:\Users\Lo\source\repos\ConsoleApp1\obj\Release\net5.0\ConsoleApp1.pdb
 C:\Users\Lo\source\repos\ConsoleApp1\obj\Release\net5.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\Lo\source\repos\ConsoleApp1\obj\Release\net5.0\ConsoleApp1.csproj.AssemblyReference.cache

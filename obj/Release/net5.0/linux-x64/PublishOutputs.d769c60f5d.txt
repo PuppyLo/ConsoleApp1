@@ -1,2 +1,0 @@
-C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\publish\ConsoleApp1.pdb
-C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\publish\ConsoleApp1

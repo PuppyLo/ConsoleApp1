@@ -1,4 +1,4 @@
-C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\publish\ConsoleApp1.exe
+C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\publish\ConsoleApp1
 C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\publish\ConsoleApp1.dll
 C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\publish\ConsoleApp1.deps.json
 C:\Users\Lo\source\repos\ConsoleApp1\bin\Release\net5.0\publish\ConsoleApp1.runtimeconfig.json
