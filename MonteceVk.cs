@@ -42,7 +42,7 @@ namespace ConsoleApp1
             Web = new WebClient();
             vkapi = new VkApi();
             _Random = new Random();
-            CommandsPath = Environment.CurrentDirectory + @"\Commands";
+            CommandsPath = Environment.CurrentDirectory + @"/Commands";
         }
 
         public static bool Authorization(string groupid)
@@ -94,10 +94,10 @@ namespace ConsoleApp1
 
         static void LoadLibrary()
         {
-            if (!Directory.Exists(CommandsPath) || !File.Exists(CommandsPath + @"\Commands.txt"))
+            if (!Directory.Exists(CommandsPath) || !File.Exists(CommandsPath + @"/Commands.txt"))
             {
                 Directory.CreateDirectory(CommandsPath);
-                File.Create(CommandsPath + @"\Commands.txt");
+                File.Create(CommandsPath + @"/Commands.txt");
                 Restart();
             }
             else ColorMessage("Директория сообщений создана успешно загружена.", ConsoleColor.Green);
@@ -314,7 +314,7 @@ namespace ConsoleApp1
 
         static string CheckCommand(string Command)
         {
-            foreach (string Line in File.ReadAllLines(CommandsPath + @"\Commands.txt"))
+            foreach (string Line in File.ReadAllLines(CommandsPath + @"/Commands.txt"))
             {
                 if (Line.Substring(0, Line.IndexOf('~')).ToLower() == Command)
                 {
@@ -327,14 +327,14 @@ namespace ConsoleApp1
         public static void Hentai()
         {
             var random = new Random();
-            var randomImage = random.Next(1, new DirectoryInfo(@"D:\utorrent\VK\Image\").GetFiles().Length);
+            var randomImage = random.Next(1, new DirectoryInfo(@"/VK/Image/").GetFiles().Length);
 
             var wc = new WebClient();
             // Получить адрес сервера для загрузки картинок в сообщении
             var uploadServer = vkapi.Photo.GetMessagesUploadServer(userID);
 
             // Загрузить картинку на сервер VK.
-            var response = Encoding.ASCII.GetString(wc.UploadFile(uploadServer.UploadUrl, @"D:\utorrent\VK\Image\ " + randomImage + @".png"));
+            var response = Encoding.ASCII.GetString(wc.UploadFile(uploadServer.UploadUrl, @"/VK/Image/ " + randomImage + @".png"));
 
             // Сохранить загруженный файл
             var attachment = vkapi.Photo.SaveMessagesPhoto(response);
@@ -381,7 +381,7 @@ namespace ConsoleApp1
         {
             try
             {
-                File.AppendAllText(CommandsPath + @"\Commands.txt", message + Environment.NewLine);
+                File.AppendAllText(CommandsPath + @"/Commands.txt", message + Environment.NewLine);
                 return "Команда добавлена)";
             }
             catch
