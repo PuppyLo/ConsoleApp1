@@ -24,7 +24,10 @@ namespace ConsoleApp1
         static VkApi vkapi;
         static Random _Random;
         static long userID = 193939494;
+
         public static string CommandsPath;
+        public static string ImagePath;
+
         static bool IsChat = false;
         const string BotCommandSuf = "";
 
@@ -37,12 +40,13 @@ namespace ConsoleApp1
         public static void Initialization()
         {
             Console.Title = "Hentai-ka bot";
-            ColorMessage("Hentaika-vot bot", ConsoleColor.Yellow);
+            ColorMessage("Hentai-ka bot", ConsoleColor.Yellow);
 
             Web = new WebClient();
             vkapi = new VkApi();
             _Random = new Random();
             CommandsPath = Environment.CurrentDirectory + @"/Commands";
+            ImagePath = Environment.CurrentDirectory + @"/Image";
         }
 
         public static bool Authorization(string groupid)
@@ -327,14 +331,14 @@ namespace ConsoleApp1
         public static void Hentai()
         {
             var random = new Random();
-            var randomImage = random.Next(1, new DirectoryInfo(@"/VK/Image/").GetFiles().Length);
+            var randomImage = random.Next(1, new DirectoryInfo(ImagePath).GetFiles().Length);
 
             var wc = new WebClient();
             // Получить адрес сервера для загрузки картинок в сообщении
             var uploadServer = vkapi.Photo.GetMessagesUploadServer(userID);
 
             // Загрузить картинку на сервер VK.
-            var response = Encoding.ASCII.GetString(wc.UploadFile(uploadServer.UploadUrl, @"/VK/Image/ " + randomImage + @".png"));
+            var response = Encoding.ASCII.GetString(wc.UploadFile(uploadServer.UploadUrl, ImagePath + "/ " + randomImage + @".png"));
 
             // Сохранить загруженный файл
             var attachment = vkapi.Photo.SaveMessagesPhoto(response);
